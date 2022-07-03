@@ -1,7 +1,7 @@
 
 ## SIMPLE TO-DO APPLICATION IMPLEMENTATION ON MERN WEB STACK IN AWS CLOUD
 First Step: Backend Configuration
-1. Create an EC2 instance server in AWS.
+1. Create an EC2 instance server runing ubuntu 20.04 LTS (HVM) image  in AWS.
 ![Create EC2 instance](./images/create-EC2-instance.jpg)
 
 2. Connect to the instance from the terminal and update ubuntu OS.
@@ -26,6 +26,7 @@ First Step: Backend Configuration
 ![create new  and verify](./images/create-directory-and-verify.jpg)
 
 8. Change current directory to Todo and run the command 'npm init' to initialise the project, so that a new file named package.json will be created.
+
 ![change directory to ToDo](./images/cd-Todo-npm-init.jpg)
 ![run npm init](./images/cd-Todo-npm-init2.jpg)
 
@@ -34,12 +35,15 @@ First Step: Backend Configuration
 
 Second Step: Install ExpressJs and create the Routes directory.
 1. Install express using npm.
+
 ![install express](./images/install-express.jpg)
 
 2. Create a index.js (using-touch index.js) and run ls to confirm that the file has been created.
+
 ![create index.js](./images/create-index.js.jpg)
 
 3. Run command (npm install dotenv) to install the dotenv module.
+
 ![install dotenv](./images/install-dotenv.jpg)
 
 4. Open the index.js file (using vim index.js). Copy and insert the required code into the file.
@@ -61,6 +65,7 @@ Second Step: Install ExpressJs and create the Routes directory.
 ![create routes](./images/create-routes.jpg)
 
 10. Create a file api.js (using touch api.js) and open it with vim.
+
 ![create api.js](./images/api.js.jpg)
 
 11. Copy and past code into the file.
@@ -72,10 +77,12 @@ Third Step: Create Models directory.
 ![install Mongoose](./images/install-mongoose.jpg)
 
 2. Create a new folder models, change into that directory, create a file todo.js, open the file(mkdir models && cd models && touch todo.js) and paste the necessary code. save and exit.
+
 ![open todo.js](./images/open-todo.js.jpg)
 ![open todo.js](./images/open-todo.js2.jpg)
 
 3. In routes directory, open api.js with vim api.js, delete the code inside the file with :%d command and paste the required code into it then save and exit.
+
 ![replace content of api.js](./images/api.js2-updated.jpg)
 
 Fourth step: Setup MongoDB Database
@@ -88,7 +95,8 @@ Fourth step: Setup MongoDB Database
 
 3. Update the content of index.js to reflect the use of .env so that Node.js can connect to the database. Then start the server.
 ![update content of index.js](./images/update-index.jsl.jpg)
-3b. Databased connected successfully. Backend successfully configured.
+ 3b. Databased connected successfully. Backend successfully configured.
+ 
 ![Databased connected successfully](./images/update-index.js2.jpg)
 
 Fifth step: Testing Backend Code without Frontend using RESTful API.
@@ -107,7 +115,7 @@ Fifth step: Testing Backend Code without Frontend using RESTful API.
 5. Send a DELETE request by passing the data id value with the url.
 ![Send DELETE request](./images/send-delete-request.jpg)
 
-Fifth Step: FontEnd Creation - creating a user interface for a Web client (browser) to interact with the application via API. 
+Sixth Step: FontEnd Creation - creating a user interface for a Web client (browser) to interact with the application via API. 
 1. Run - create-react-app client command  to start with the creation of the frontend for the To-do app. This creates REACT code in the clients folder.
 ![Creating REACT App](./images/creatn-react-app.jpg)
 
@@ -131,6 +139,7 @@ Fifth Step: FontEnd Creation - creating a user interface for a Web client (brows
 ![update client/package.json](./images/add-port-3000.jpg)
 
 7. Create the REACT Components (two stateful components and one stateless) for the Todo app. Change to the client directory. Then move to the src folder and create components folder. Then change directory to the components folder and create three files (Input.js ListTodo.js Todo.js).
+
 ![create components folder](./images/create-components-folder.jpg)
 ![create components folder](./images/create-3-files.jpg)
 
@@ -138,9 +147,10 @@ Fifth Step: FontEnd Creation - creating a user interface for a Web client (brows
 ![add code into Input.js](./images/add-code-into-input.jpg)
 
 9. Install Axios (with run yarn add axios or npm install axios) in client directory to make use of Axios Promise based HTTP client for the browser and node.js.
+
 ![install Axios](./images/install-axios-in-client.jpg)
 
-10. From the src in the components directory (cd src/components),  open the ListTodo.js file and insert the required code into the file
+10. From the src in the components directory (cd src/components),  open the ListTodo.js file and insert the required code into the file.
 ![open ListTodo ](./images/open-list-todo.jpg)
 ![insert code into ](./images/open-list-todo2.jpg)
 
